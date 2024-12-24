@@ -10,9 +10,11 @@ jobs:
     runs-on: self-hosted
 
     steps:
+      # Step 1: Checkout the code
       - name: Checkout code
         uses: actions/checkout@v3
 
+      # Step 2: Setup SSH
       - name: Setup SSH
         run: |
           mkdir -p ~/.ssh
@@ -21,23 +23,22 @@ jobs:
           ssh-keyscan -H 192.168.18.175 >> ~/.ssh/known_hosts
           ls -la ~/.ssh/
 
+      # Step 3: Test SSH Connection
       - name: Test SSH Connection
         run: ssh -v virhan@192.168.18.175 'echo "SSH Connection successful"'
 
-      - name: Deploy and Restart
+      # Step 4: Deploy and Restart (using pnpm)
+      - name: Deploy and Restart Application
         run: |
           ssh virhan@192.168.18.175 '
             cd /home/virhan/astra
-            git pull origin main
-            npm install
-            npm run build
-            
-            # Set permissions
-            sudo chown -R virhan:virhan .
-            sudo chown -R www-data:www-data dist
-            
-            # Restart dengan PM2
-            pm2 delete astra || true
-            pm2 start npm --name "astra" -- run preview
-            pm2 save
+            git pull origin main  # Pull latest changes from GitHub
+            pnpm install           # Install dependencies using pnpm
+            pnpm run build          # Build the project
+            pnpm run preview        # Start the application (adjust if needed)
+
+            # Restart with PM2 (adjust if necessary)
+            pm2 delete astra || true  # Delete any previous PM2 process
+            pm2 start npm --name "astra" -- run preview  # Restart app with PM2
+            pm2 save                # Save PM2 process list for auto restart
           '
