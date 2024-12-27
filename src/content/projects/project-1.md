@@ -5,10 +5,13 @@ image:
     url: '/GitHub.webp'
     alt: 'GitHub wallpaper'
 worksImage1:
-    url: '/shortener-1.png'
+    url: '/shortener-1.webp'
+    alt: 'URL Shortener Dashboard'
+worksImage2:
+    url: '/shortener-2.png'
     alt: 'URL Shortener Dashboard'
 platform: Web
-stack: Astro, JavaScript
+stack: TypeScript, React, Tailwind CSS, Shadcn/UI
 website: https://shortener.virhanali.com
 github: https://github.com/virhanali/url-shortener
 ---

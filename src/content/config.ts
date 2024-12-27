@@ -6,16 +6,16 @@ const projectsCollection = defineCollection({
       title: z.string(),
       description: z.string(),
       image: z.object({
-        url: z.string(),
-        alt: z.string()
+        url: z.string().optional(),
+        alt: z.string().optional()
       }),
       worksImage1: z.object({
-        url: z.string(),
-        alt: z.string()
+        url: z.string().optional(),
+        alt: z.string().optional()
       }),
       worksImage2: z.object({
-        url: z.string(),
-        alt: z.string()
+        url: z.string().optional(),
+        alt: z.string().optional()
       }),
       platform: z.string(),
       stack: z.string(),
