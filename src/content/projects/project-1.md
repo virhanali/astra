@@ -1,19 +1,43 @@
 ---
-title: 'Project 1'
-description: 'Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci'
+title: 'URL Shortener'
+description: 'A modern, responsive URL shortening application built with React, TypeScript, and Shadcn/UI.'
 image:
     url: '/GitHub.webp'
     alt: 'GitHub wallpaper'
 worksImage1:
-    url: '/image-1.webp'
-    alt: 'first image of your project.'
-worksImage2:
-    url: '/image-2.webp'
-    alt: 'second image of your project.'
+    url: '/shortener-1.png'
+    alt: 'URL Shortener Dashboard'
 platform: Web
 stack: Astro, JavaScript
-website: https://virhanali.com
-github: https://github.com/virhanali/
+website: https://shortener.virhanali.com
+github: https://github.com/virhanali/url-shortener
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras faucibus a tortor at molestie. Sed pellentesque leo auctor, auctor lorem nec, venenatis risus. Vivamus commodo ipsum vitae orci finibus, vel porta nunc viverra. In hac habitasse platea dictumst. Nunc pretium, ligula ultricies consequat sollicitudin, enim ex ullamcorper nisl.
+Features
+
+- **Modern UI/UX**: Built with a clean, intuitive interface using Shadcn/UI components
+- **Responsive Design**: Fully responsive layout that works seamlessly across all devices
+- **Custom Short URLs**: Option to create custom alias for shortened URLs
+- **Secure**: HTTPS encryption for all shortened URLs
+
+Technical Details
+
+The URL Shortener is built with modern web technologies and best practices:
+
+- **Frontend**: React with TypeScript for type-safe code
+- **Styling**: Tailwind CSS for responsive design
+- **UI Components**: Shadcn/UI for consistent and beautiful components
+- **State Management**: React Context API for global state
+- **Data Persistence**: Local storage for saving user preferences
+- **Performance**: Optimized loading with lazy loading and code splitting
+
+Implementation
+
+The application follows a clean architecture pattern with:
+
+- Separation of concerns between UI components and business logic
+- Custom hooks for reusable functionality
+- Error boundary implementation for graceful error handling
+- Responsive design implementation using Tailwind CSS breakpoints
+
+
