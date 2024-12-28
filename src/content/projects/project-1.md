@@ -2,8 +2,8 @@
 title: 'URL Shortener'
 description: 'A modern, responsive URL shortening application built with React, TypeScript, and Shadcn/UI.'
 image:
-    url: '/GitHub.webp'
-    alt: 'GitHub wallpaper'
+    url: '/shortener-1.webp'
+    alt: 'URL Shortener Dashboard'
 worksImage1:
     url: '/shortener-1.webp'
     alt: 'URL Shortener Dashboard'
