@@ -1,14 +1,14 @@
 ---
 title: 'Rizz Generator'
-description: 'A fun web application that generates creative pickup lines (rizz) using AI. Built with React, TypeScript, and OpenAI's GPT-4.'
+description: 'A fun web application that generates creative pickup lines (rizz) using AI. Built with React, TypeScript, and OpenAI GPT-4.'
 image:
-    url: 'rizz-2.webp'
+    url: '/rizz-1.webp'
     alt: 'Rizz Generator Dashboard'
 worksImage1:
-    url: 'rizz-1.webp'
+    url: '/rizz-1.webp'
     alt: 'Rizz Generator Dashboard'
 worksImage2:
-    url: 'rizz-2.webp'
+    url: '/rizz-2.webp'
     alt: 'Rizz Generator Dashboard'
 platform: Web
 stack: TypeScript, React, Tailwind CSS, Shadcn/UI, OpenAI
