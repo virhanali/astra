@@ -12,7 +12,7 @@ worksImage2:
     alt: 'NeuroTrade Market Analysis'
 platform: Web
 stack: Go, Python, PostgreSQL, Redis, FastAPI, HTMX
-website: https://github.com/virhanali/neurotrade
+website: https://neurotrade.virhanali.com
 github: https://github.com/virhanali/neurotrade
 ---
 
